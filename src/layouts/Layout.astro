@@ -1,7 +1,3 @@
----
-import "../styles/global.css"
----
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,6 +15,7 @@ import "../styles/global.css"
 </html>
 
 <style is:global>
+  @reference "../styles/global.css";
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -33,15 +30,15 @@ import "../styles/global.css"
   }
   html {
     font-family: system-ui, sans-serif;
-	background: #13151a;
-	color: #fff
+    background: #13151a;
+    color: #fff;
   }
 
   body {
-	@apply grid place-content-center p-20;
+    @apply grid place-content-center p-20;
   }
 
   body > div {
-	@apply container;
+    @apply container;
   }
 </style>
